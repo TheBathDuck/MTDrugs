@@ -1,0 +1,33 @@
+# Wiet = Fern
+# Paddo = Brown Mushroom
+# Opium = Red Rose
+
+Paddo:
+  ItemName: '&ePaddo'
+  ItemLore: '&7Officieel Drugs Item.'
+
+Wiet:
+  ItemName: '&2Wiet'
+  ItemLore: '&7Officieel Drugs Item.'
+
+Opium:
+  ItemName: '&dOpium'
+  ItemLore: '&7Officieel Drugs Item.'
+
+Coke:
+  ItemName: '&fCoke'
+  ItemLore: '&7Officieel Drugs Item.'
+
+# %s% = Seconden
+# %ms% = Miliseconden
+# %p% = Player
+
+# Alleen te gebruiken in HoloLine 1 & 2
+# anders gaat dit niet werken.
+
+
+Hologram:
+  HoloLine1: '&eFarmen:'
+  HoloLine2: '&7%s%.%ms%s'
+  Klaar: '&aKlaar!'
+  Gestopt: '&cGestopt!'

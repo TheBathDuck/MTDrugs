@@ -1,0 +1,9 @@
+name: MTDrugs
+version: '2.3'
+main: dev.thebathduck.drugs.Drugs
+authors: [ SubwayKoekje, GamerJoep_, Milan_V, OmeWillem ]
+description: 'MTDrugs, de #1 drugs plugin.'
+depend: [WorldGuard]
+commands:
+  mtdrugs:
+    description: Main cmd.
