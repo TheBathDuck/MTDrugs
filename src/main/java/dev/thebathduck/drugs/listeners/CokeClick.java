@@ -54,7 +54,7 @@ public class CokeClick implements Listener {
             p.sendMessage(Format.chat("&cJe bent al aan het farmen!"));
             return;
         }
-        Location loc = new Location(block.getWorld(), block.getX() - 0.75, block.getY() - 1.75, block.getZ() - 0.75, p.getLocation().getYaw(), p.getLocation().getPitch());
+        Location loc = new Location(p.getWorld(),p.getLocation().getX(), p.getLocation().getY() -1.75, p.getLocation().getZ(), p.getLocation().getYaw(), p.getLocation().getPitch());
         //Location loc = new Location(p.getWorld(),p.getLocation().getX(), p.getLocation().getY() -1.75, p.getLocation().getZ(), p.getLocation().getYaw(), p.getLocation().getPitch());
         ArmorStand as = (ArmorStand) loc.getWorld().spawn(loc, ArmorStand.class);
         as.setPassenger(p);

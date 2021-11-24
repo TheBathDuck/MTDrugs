@@ -11,13 +11,16 @@ import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
+import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
+import net.milkbowl.vault.economy.Economy;
 
 import java.util.ArrayList;
 import java.util.UUID;
 
 public final class Drugs extends JavaPlugin {
 
+    private static Economy econ = null;
     public static ArrayList<UUID> farmers = new ArrayList<>();
     public static ArrayList<Location> blocks = new ArrayList<>();
     public static ArrayList<UUID> stands = new ArrayList<>();
@@ -51,10 +54,14 @@ public final class Drugs extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         saveDefaultConfig();
-
-
         instance = this;
         plugin = this;
+
+        if (!setupEconomy() ) {
+            getLogger().info("Vault niet gevonden, uitschakelen die tyfus zooi.");
+            getServer().getPluginManager().disablePlugin(this);
+            return;
+        }
         getCommand("mtdrugs").setExecutor(new MTDrugsCMD());
         Bukkit.getPluginManager().registerEvents(new PaddoClick(), this);
         Bukkit.getPluginManager().registerEvents(new WietClick(), this);
@@ -62,7 +69,6 @@ public final class Drugs extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new OpiumClick(), this);
         Bukkit.getPluginManager().registerEvents(new CokeClick(), this);
         Bukkit.getPluginManager().registerEvents(new DevTools(), this);
-        //Bukkit.getPluginManager().registerEvents(new onLeave(), this);
     }
 
     @Override
@@ -88,6 +94,21 @@ public final class Drugs extends JavaPlugin {
         }
 
         return (WorldGuardPlugin) plugin;
+    }
+    private boolean setupEconomy() {
+        if (getServer().getPluginManager().getPlugin("Vault") == null) {
+            return false;
+        }
+        RegisteredServiceProvider<Economy> rsp = getServer().getServicesManager().getRegistration(Economy.class);
+        if (rsp == null) {
+            return false;
+        }
+        econ = rsp.getProvider();
+        return econ != null;
+    }
+
+    public static Economy getEconomy() {
+        return econ;
     }
 
 }

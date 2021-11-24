@@ -2,21 +2,28 @@
 # Paddo = Brown Mushroom
 # Opium = Red Rose
 
+NPC:
+  VerkoopNaam: '&2&oDrugs Verkoop'
+
 Paddo:
   ItemName: '&ePaddo'
   ItemLore: '&7Officieel Drugs Item.'
+  SellPrice: 1250
 
 Wiet:
   ItemName: '&2Wiet'
   ItemLore: '&7Officieel Drugs Item.'
+  SellPrice: 1250
 
 Opium:
   ItemName: '&dOpium'
   ItemLore: '&7Officieel Drugs Item.'
+  SellPrice: 1250
 
 Coke:
   ItemName: '&fCoke'
   ItemLore: '&7Officieel Drugs Item.'
+  SellPrice: 1250
 
 # %s% = Seconden
 # %ms% = Miliseconden

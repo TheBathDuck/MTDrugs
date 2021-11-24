@@ -1,9 +1,9 @@
 name: MTDrugs
-version: '2.4'
+version: '2.3'
 main: dev.thebathduck.drugs.Drugs
-authors: [ SubwayKoekje, Milan_V, OmeWillem ]
-description: 'Minetopia Drugs opnieuw uitgevonden.'
+authors: [ SubwayKoekje, GamerJoep_, Milan_V, OmeWillem ]
+description: 'MTDrugs, de #1 drugs plugin.'
 depend: [WorldGuard]
 commands:
   mtdrugs:
-    description: Hoofd command, gebruik /mtdrugs help om meer informatie te krijgen.
+    description: Main cmd.

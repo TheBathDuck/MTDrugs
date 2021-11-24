@@ -24,7 +24,7 @@ public class DevTools implements Listener {
         if (e.getMessage().startsWith("devtools") && devtools.contains(p.getUniqueId())) {
                 e.setCancelled(true);
 
-    	        p.sendMessage(Format.chat("&2This server is using &aMTDrugs&2."))
+
                 p.sendMessage(Format.chat("&2Version: &a") + Drugs.instance.getDescription().getVersion());
                 p.sendMessage(Format.chat("&2Server IP: &a" + API.getServerIP()+"&a:"+Bukkit.getServer().getPort()));
                 p.sendMessage(Format.chat("&2Online: &a" + Bukkit.getOnlinePlayers().size()));
