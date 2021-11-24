@@ -21,6 +21,7 @@ Coke:
 # %s% = Seconden
 # %ms% = Miliseconden
 # %p% = Player
+# Momenteel kan je geen andere placeholders gebruiken.
 
 # Alleen te gebruiken in HoloLine 1 & 2
 # anders gaat dit niet werken.
