@@ -39,7 +39,6 @@ public class MTDrugsCMD implements CommandExecutor {
                 }
 
             }
-
         }
         return false;
     }

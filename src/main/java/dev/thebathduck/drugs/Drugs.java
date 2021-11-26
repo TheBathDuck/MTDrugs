@@ -38,8 +38,6 @@ public final class Drugs extends JavaPlugin {
             worldGuard = (WorldGuardPlugin)worldGuardPlugin;
     }
 
-
-
     public static boolean plotExists(Location plotLoc) {
         return (worldGuard.getRegionManager(plotLoc.getWorld()).getApplicableRegions(plotLoc).getRegions().size() != 0);
     }
@@ -80,7 +78,6 @@ public final class Drugs extends JavaPlugin {
                 if (ent == null) return;
                 if (stands.contains(ent.getUniqueId())) {
                     ent.remove();
-                    stands.remove(ent.getUniqueId());
                 }
             }
         }
