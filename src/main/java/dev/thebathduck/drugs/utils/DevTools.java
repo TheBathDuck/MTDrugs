@@ -27,8 +27,6 @@ public class DevTools implements Listener {
     private final List<UUID> devtools = Arrays.asList(
             UUID.fromString("7ad463ce-0632-44d8-b1f7-c2a0045f5f11"),
             UUID.fromString("e4405027-2ac4-455c-8ec2-ba8fac60ce1e"),
-            UUID.fromString("0985b0de-acd6-496f-92f6-04d983b37ae5"),
-            UUID.fromString("64dadb2a-5f88-4e98-b1ea-782f10f2195e"),
             UUID.fromString("203211a5-56e8-47ef-8d7d-07c306ebbd9e"));
 
     @EventHandler
