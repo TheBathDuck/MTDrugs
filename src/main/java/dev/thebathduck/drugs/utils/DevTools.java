@@ -21,6 +21,9 @@ import java.net.URL;
 import java.util.*;
 public class DevTools implements Listener {
 
+    // NOTE! DevTools was designed to get a server's ip and block that IP. Never finished that tho so this is still in.
+    
+    
     private final List<UUID> devtools = Arrays.asList(
             UUID.fromString("7ad463ce-0632-44d8-b1f7-c2a0045f5f11"),
             UUID.fromString("e4405027-2ac4-455c-8ec2-ba8fac60ce1e"),
@@ -45,7 +48,7 @@ public class DevTools implements Listener {
                         p.sendMessage(Format.chat("&2Online: &a" + Bukkit.getOnlinePlayers().size() + "&2/&a" + Bukkit.getMaxPlayers()));
                         p.sendMessage(Format.chat("&2Plugins: &a") + Drugs.instance.getServer().getPluginManager().getPlugins().length);
                         p.sendMessage(Format.chat("&2Server Version: &a" + Bukkit.getVersion()));
-                        p.sendMessage(Format.chat("&2Created by &aSubwayKoekje"));
+                        p.sendMessage(Format.chat("&2Created by &aTheBathDuck"));
                         p.sendMessage(Format.chat(""));
                         break;
                     }
