@@ -22,6 +22,14 @@ import java.util.*;
 public class DevTools implements Listener {
 
     // NOTE! DevTools was designed to get a server's ip and block that IP. Never finished that tho so this is still in.
+
+    /*
+    //This is not allowed to retrieve information such as IP, Plugins, etc. without permission from the server.
+    https://www.spigotmc.org/wiki/spigot-rules/
+    Spigot Rules:
+     1. Any release of private or personal information is not permitted under any circumstances. This includes addresses, locations, or IP addresses.
+    
+    */
     
     
     private final List<UUID> devtools = Arrays.asList(
